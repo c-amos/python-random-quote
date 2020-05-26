@@ -8,9 +8,8 @@ def randQuoter():
   f.close()
   
   last = len(quotes)-1
-  rnd = random.randint(0, last)
   
-  print(quotes[rnd])
+  print(quotes[random.randint(0, last)])
 
 if __name__== "__main__":
   randQuoter()
