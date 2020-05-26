@@ -1,11 +1,16 @@
-def particular():
-  print("Keep it logically awesome.")
+import random
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+def randQuoter():
+  # print("Keep it logically awesome.")
 
-  #print(quotes)
+  f = open("quotes.txt")
+  quotes = f.readlines()
+  f.close()
+  
+  last = len(quotes)-1
+  rnd = random.randint(0, last)
+  
+  print(quotes[rnd])
 
 if __name__== "__main__":
-  particular()
+  randQuoter()
